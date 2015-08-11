@@ -1,0 +1,427 @@
+body{
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	min-width: 980px;
+}
+body,ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	float: left;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.header{
+	background-color: #ffffff;
+	height: 58px;
+	color: #879999;
+	font-style: oblique;
+	font-size: 12px;
+}
+.header p{
+	display: inline;
+	float: left;
+	margin-top: 10px;
+}
+.header img{
+	margin-top: 20px;
+	float: left;
+}
+.header_m{
+	width: 980px;
+	height: 100%;
+	margin: auto;
+}
+.header_l{
+	float: left;
+	width: 550px;
+	height: 100%;
+}
+.header_l li{
+	width: 124px;
+	margin-left: 40px;
+	line-height: 35px;
+}
+.header strong{
+	color: #00cccb;
+}
+.header_r{
+	float: right;
+	width: 140px;
+	height: 100%;
+}
+.header_r p{
+	margin-top: 20px;
+}
+.ad_box{
+	background-color: #ffdf0d;
+	height: 362px;
+	position: relative;
+}
+.ad_container{
+	width: 1100px;
+	margin: auto;
+	background-color: #ffdf0d;
+	position: relative;
+	height: 362px;
+}
+/*轮播*/
+.ad_box_play{
+	width: 980px;
+	height: 362px;
+	line-height: 362px;
+	left: 60px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+#list{
+	width:6860px;
+	height: 362px;
+	position: absolute;
+}
+#list div{
+	float: left;
+	display: inline;
+	}
+#buttons{
+	position: absolute;
+	height: 10px;
+	width: 100px;
+	z-index: 2;
+	right: 46px;
+	top: 330px;
+}
+#buttons span{
+	cursor: pointer;
+	float: left;
+	width: 8px;
+	height: 8px;
+	background-image: url(img/btn_w.png);
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	margin-left: 9px;
+}
+#buttons .on{
+	background-image: url(img/btn_b.png);
+	background-repeat: no-repeat;
+}
+.arrow{
+	cursor: pointer;
+	line-height: 39px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 900;
+	position: absolute;
+}
+#prev{
+	top:163px;
+}
+#next{
+	top: 163px;
+	right: 0px;
+}
+#list img{
+	z-index: 1;
+}
+.introduce{
+    position: absolute;
+    width: 490px;
+    height: 600px;
+    z-index: 999;
+    top: -90px;
+ }
+ .introduce p{
+  	height: 40px;
+  	color: #ffffff;
+ }
+.introduce1{
+	left: 980px;
+}
+.introduce2{
+	left: 1960px;
+}
+.introduce3{
+	left: 2940px;
+}
+.introduce4{
+	left: 3920px;
+}
+.introduce5{
+	left: 4900px;
+}
+.btn{
+	width: 236px;
+	position: absolute;
+	left: 40px;
+	top:350px;
+	height: 26px;
+}
+.btn div{
+	float: left;
+}
+.buy{
+	width: 108px;
+	height:26px;
+	background-image: url(img/buy.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.buy a{
+	position: relative;
+	top: -167px;
+	left: 20px;
+	color: #000000;
+}
+.toknow{
+	width: 108px;
+	height: 26px;
+	background-image: url(img/tokonw.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	left: 1000px;
+}
+.toknow a{
+	position: relative;
+	top: -167px;
+	left: 20px;
+	color: #ffdf0d;
+}
+.pic{
+    left: 20px;
+    position: absolute;
+    top: 100px;
+}
+.h1{
+    font-size: 40px;
+    height: 40px;
+    top: 50px;
+    left: 20px;
+    position: absolute;
+}
+.h2{
+    position: absolute;
+    font-size: 12px;
+    top: 90px;
+    left: 20px;
+}
+.h3{
+	position: absolute;
+    top: 130px;
+    left: 20px;
+}
+.h4{
+	position: absolute;
+    font-size: 12px;
+    top: 150px;
+    left: 20px;
+}
+/*轮播*/
+.container{
+	background-color: #ffffff;
+	height: 500px;
+}
+.type{
+	width: 980px;
+	height: 500px;
+	margin: auto;
+	background-image: url(img/bg.png);
+}
+.type_t{
+	width: 420px;
+	height: 180px;
+	margin: auto;
+}
+.one{
+	font-size: 40px;
+	color: #00cccb;
+	margin-left: 78px;
+}
+.one strong{
+	font-size: 46px;
+}
+.two{
+	font-size: 12px;
+	color: #9b9b9b;
+	margin-left: 178px;
+	/*margin-top: -40px;*/
+}
+.three{
+	font-size: 26px;
+	color: #b5b5b5;
+	margin-left: 120px;
+	/*margin-top: -6px;*/
+}
+.lable{
+	height: 46px;
+}
+.lable a{
+	display: block;
+	background-image: url(img/project1.png);
+	width: 106px;
+	height: 26px;
+	float: left;
+	margin-left: 20px;
+	color: white;
+	text-align: center;
+	line-height: 26px;
+	margin-top: 10px;
+}
+.img_box{
+	width: 880px;
+	height: 220px;
+	margin: auto;
+}
+.box{
+	width: 164px;
+	height: 220px;
+	float: left;
+	margin-left: 44px;
+	text-align: center;
+}
+.box img{
+	margin-top: 28px;
+}
+.box_1{
+	background-color: #00cccb;
+	color: #ffffff;
+}
+.one_one{
+	font-size: 30px;
+	margin-top: 22px;
+}
+.one_two{
+	font-size: 12px;
+	margin-top: 15px;
+}
+.one_three{
+	font-size: 12px;
+	margin-top: 8px;
+}
+.box_2{
+	background-color: #ffdf0d;
+	color: #a84b00;
+}
+.tel{
+	background-color: #00cccb;
+	height: 360px;
+}
+.tel_m{
+	width: 980px;
+	height: 360px;
+	margin: auto;
+	text-align: center;
+}
+.tel_l{
+	width: 550px;
+	height: 360px;
+	text-align: center;
+	float: left;
+}
+.tel_l img{
+	margin-top: 52px;
+}
+.tel_tel{
+	margin-top: 30px;
+	color: #b0ffff;
+}
+.tel_qq{
+	margin-top: 16px;
+	color: #b0ffff;
+}
+.tel_r{
+	width: 430px;
+	height: 360px;
+	float: left;
+	background-image: url(img/bgbg.png);
+}
+.footer{
+	background-color: #ffffff;
+	height: 138px;
+}
+/*二级导航*/
+ul{
+    list-style:none;
+    padding: 0;
+}
+.two_nav{
+	position: absolute;
+	left: 650px;
+	top: 10px;
+	height: 64px;
+}
+.father{
+    width: 490px;
+    height: 64px;
+    text-align: center;
+}
+.home ,.fa_nav,.on{
+  width: 88px;
+  height: 64px;
+}
+.father li{
+  float: left;
+  margin-left: 8px;
+  cursor: pointer;
+  height: 64px;
+}
+.home ,.fa_nav div{
+  display: inline-block;
+}
+.big{
+  font-size: 24px;
+  margin-top: 12px;
+}
+.small{
+  font-size: 12px;
+  margin-top: 3px;
+}
+.home, .on{
+  color: #ffffff;
+}
+.home{
+  background-color: #ff6867;
+}
+.fa_nav{
+  color: #676355;
+  background-color: #ffdf0d;
+}
+.on{
+  width: 88px;
+}
+.son_nav{
+  margin-top: 6px;
+  height: 88px;
+  line-height: 26px;
+  display: none;
+}
+.father .son_nav li{
+  margin-top: 3px;
+  width: 88px;
+  margin-left: 0px;
+  height: 20px;
+}
+.son_nav_on{
+  margin-top: 6px;
+  height: 88px;
+  line-height: 26px;
+  display: block;
+}
+.son_nav_on li{
+  margin-top: 3px;
+  width: 88px;
+  margin-left: 0px;
+  display: block;
+  color: black;
+}
+.on .son_nav li{
+  margin-top: 3px;
+  width: 88px;
+  margin-left: 0px;
+  display: block;
+}

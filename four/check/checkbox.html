@@ -6,12 +6,15 @@
 </head>
 <style>
 	.check,
-	.check-all,
-	.check-re{
+	.check-all{
 		width: 100px;
 		height: 100px;
 	}
-	span{
+	.check-re{
+		width: 200px;
+		height: 100px;
+	}
+	span,.check-re{
 		font-size: 80px;
 	}
 </style>
@@ -26,19 +29,17 @@
 	<input type="checkbox" name="1" class="check"/><br>
 	<span>全选</span>
 	<input type="checkbox" name="0" class="check-all"/><br>
-	<span>反选</span>
-	<input type="checkbox" name="0" class="check-re"/>
+	<input type="button" value="反选" class="check-re"/>
 </div>
-
+	
 
 <script>
-function allCkBox(id){
+(function() { 
 //声明各种变量
-	var tableBox = document.getElementById("tableBox"),
-	check = tableBox.getElementsByClassName("check"),
-	checkAll = tableBox.getElementsByClassName("check-all")[0],
-	checkRe = tableBox.getElementsByClassName("check-re")[0];
-
+	var tableBox = document.querySelector('div'),
+	check = document.querySelectorAll('.check'),
+	checkAll = document.querySelector('.check-all'),
+	checkRe = document.querySelector('.check-re');
 
 	//全选函数
 	function allCheck(a){
@@ -49,24 +50,50 @@ function allCkBox(id){
 
 	//反选函数
 	function reCheck(){
-		for(var i = 0; i<check.length;i++){
-			check[i].checked ? check[i].checked = false : check[i].checked = true;
+		for(var i = 0; i<check.length; i++){
+			//check[i].checked ? check[i].checked = false : check[i].checked = true;
+			check[i].checked = !check[i].checked;
 		}
 	}
+
+	//判断checkAll的状态
+	function judge(){
+		var m = 0;
+		for(var i = 0; i<check.length; i++){
+			if(check[i].checked == true){
+				m ++;
+			}else{
+				break;
+			}
+		}
+		if(m == check.length){
+			checkAll.checked = true;
+		}else{
+			checkAll.checked = false;
+		}
+	}
+
+	for(var i = 0; i<check.length; i++){
+		check[i].addEventListener("change", function(){
+			judge();
+		},false);
+	}
+
 
 	//全选
 	checkAll.onchange = function(){
 		allCheck(this.checked);
 	};
 
+
 	//反选
-	checkRe.onchange = function(){
+	checkRe.onclick = function(){
 		reCheck();
 	};
 
-}
 
- allCkBox(); //js全选反选调用
+
+})(); 
 </script>
 </body>
 </html>

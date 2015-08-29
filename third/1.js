@@ -1,21 +1,24 @@
-var list = document.getElementById('list');
-var shadow = document.getElementById('shadow');
-var clear = document.getElementById('clear');
-// var check = document.getElementById('conter').getElementsByTagName('span');
+var list = document.querySelector('#list'),
+clear = document.querySelector('.clear'),
+falist = document.querySelectorAll('.fa-list'),
+filter = document.querySelector('#filter');
 
-list.onclick = function(){
-	shadow.style.display = 'block';
-	 // alert('123');
-}
-clear.onclick = function(){
-	shadow.style.display = 'none';
-	// alert('123');
-}
-// for(i = 0;i<check.length; i++){
-// 	// alert(check.length);
-// 	check.onclick = function(){
-// 		if(this.style.display == ""){
-// 			this.style.display = "block";
-// 		}
-// 	}
-// }
+list.addEventListener("touchend",function(){
+	// alert("11");
+	filter.style.visibility = 'visible';
+	filter.style.opacity = '1';
+});
+
+clear.addEventListener("touchend",function(){
+	// alert("11");
+	filter.style.visibility = 'hidden';
+	filter.style.opacity = '0';
+});
+
+for(var i = 0, len = falist.length; i < len; i ++) {
+	falist[i].addEventListener("touchend", function () {
+		var son = this.querySelector('.son');
+		son.style.height = '100px';
+		son.style.opacity = '1';
+	});
+};
